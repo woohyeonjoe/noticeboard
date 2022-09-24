@@ -6,11 +6,15 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.transaction.annotation.Transactional;
 import project.noticeboard.domain.posts.Posts;
 import project.noticeboard.domain.posts.PostsRepository;
 import project.noticeboard.web.dto.PostsSaveRequestDto;
@@ -20,9 +24,14 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-
+@Transactional
+@AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@WithMockUser(roles = "USER")
 class PostsApiControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
 
     @LocalServerPort
     private int port;
@@ -38,9 +47,11 @@ class PostsApiControllerTest {
         postsRepository.deleteAll();
     }
 
+
     /**
     @Test
     public void Posts_등록된다() throws Exception {
+
         //given
         String title = "title";
         String content = "content";
@@ -62,8 +73,10 @@ class PostsApiControllerTest {
         List<Posts> all = postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(title);
         assertThat(all.get(0).getContent()).isEqualTo(content);
+
     }
     */
+
 
 
 }
