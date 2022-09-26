@@ -1,1 +1,4 @@
+*.html linguist-vendored=false
+*.js linguist-vendored=false
+*.css linguist-vendored=false
 *.mustache linguist-vendored=false
