@@ -1,7 +1,7 @@
 # noticeboard
 
 ### [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://search.shopping.naver.com/book/catalog/32436253723?cat_id=50010881&frm=PBOKPRO&query=%EC%8A%A4%ED%94%84%EB%A7%81+%EB%B6%80%ED%8A%B8%EC%99%80+AWS%EB%A1%9C+%ED%98%BC%EC%9E%90+%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94+%EC%9B%B9+%EC%84%9C%EB%B9%84%EC%8A%A4&NaPm=ct%3Dl8i36ucw%7Cci%3D3cc5b084564919fd49e8c19271c6a2eb0913bde7%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D4ecf6ab297f11212c60be174a939fdf4173b316e)를 통해 학습한 내용을 정리한 문서입니다.   
-### 실습을 진행하며 만난 [문제와 해결과정](https://github.com/woohyeonjoe/noticeboard/blob/main/%EB%AC%B8%EC%A0%9C%20%EB%B0%9C%EC%83%9D%EA%B3%BC%20%ED%95%B4%EA%B2%B0.md)입니다.
+### 이 파일은 실습을 진행하며 만난 [문제와 해결과정](https://github.com/woohyeonjoe/noticeboard/blob/main/%EB%AC%B8%EC%A0%9C%20%EB%B0%9C%EC%83%9D%EA%B3%BC%20%ED%95%B4%EA%B2%B0.md)입니다.
 
 ---
 
