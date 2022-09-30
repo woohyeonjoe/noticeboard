@@ -7,7 +7,6 @@
 
 ### 01장 인텔리제이로 스프링 부트 시작하기
 
-- 인텔리제이 설정
 - build.gradle 추가
 - github 등록
 
@@ -113,7 +112,7 @@ JPA에선 Repository라고 부른다.
 
 **쿼리문 확인하기**
 
-`[a](http://application.properties)pplication.properties` 에 `spring.jpa.show_sql=true` 입력
+`application.properties` 에 `spring.jpa.show_sql=true` 입력
 
 **등록/수정/조회 API 만들기**
 
